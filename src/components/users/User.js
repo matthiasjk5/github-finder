@@ -1,8 +1,8 @@
-import React, { Component, Fragment } from "react";
-import Spinner from "../layout/Spinner";
-import Repos from "../repos/Repos";
-import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
+import React, { Component, Fragment } from 'react';
+import Spinner from '../layout/Spinner';
+import Repos from '../repos/Repos';
+import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 export class User extends Component {
   componentDidMount() {
@@ -44,7 +44,7 @@ export class User extends Component {
         <Link to='/' className='btn btn-light'>
           Back to Search
         </Link>
-        Hireable:{" "}
+        Hireable:{' '}
         {hireable ? (
           <i className='fas fa-check text-success' />
         ) : (
@@ -56,7 +56,7 @@ export class User extends Component {
               src={avatar_url}
               className='round-img'
               alt=''
-              style={{ width: "150px" }}
+              style={{ width: '150px' }}
             />
             <h1>{name}</h1>
             <p>Location: {location}</p>
